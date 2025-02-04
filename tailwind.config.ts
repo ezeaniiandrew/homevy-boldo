@@ -10,7 +10,15 @@ export default {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        "dark-blue": "var(--dark-blue)",
+        "light-blue": "var(--light-blue)",
+        green: "var(--green)",
+        "light-grey": "var(--light-grey)",
+        "grey-blue": "var(--grey-blue)",
+        gray: "var(--gray)",
+      },
+      fontFamily: {
+        manrope: ["Manrope", "serif"],
       },
     },
   },
