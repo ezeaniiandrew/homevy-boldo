@@ -19,4 +19,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: "Open Sans", serif;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }

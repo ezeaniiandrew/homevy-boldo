@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "Boldo",
   description: "Homevy Tasks",
@@ -10,7 +12,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <main className="w-full max-w-[1440px] relative">{children}</main>
+      </body>
     </html>
   );
 }
