@@ -1,9 +1,4 @@
-import Testimonial from "@/components/Testimonial";
-import Hero from "@/components/Hero";
-import Nav from "@/components/Nav";
-import Services from "@/components/Services";
-import Faq from "@/components/Faq";
-import Blog from "@/components/Blog";
+import { Blog, Faq, Hero, Nav, Services, Testimonial } from "@/components";
 
 export default function Home() {
   return (
