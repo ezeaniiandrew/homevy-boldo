@@ -3,7 +3,7 @@ import SVGLogo from "./Logo";
 
 export default function Nav() {
   return (
-    <nav className="fixed bg-dark-blue flex justify-between items-between px-[6.25rem] mt-[3.5rem] w-full text-white">
+    <nav className="fixed z-50 bg-dark-blue flex justify-between items-between px-[6.25rem] mt-[3.5rem] w-full text-white">
       <div className="flex items-center gap-1">
         <SVGLogo fillColor="#65e4a3" width={26} height={33} />
         <p className="font-manrope font-bold text-[2.7rem]">Boldo</p>
