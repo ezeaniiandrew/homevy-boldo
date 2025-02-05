@@ -5,3 +5,4 @@ export { default as Testimonial } from "./Testimonial";
 export { default as Faq } from "./Faq";
 export { default as Blog } from "./Blog";
 export { default as ContactUs } from "./ContactUs";
+export { default as Footer } from "./Footer";

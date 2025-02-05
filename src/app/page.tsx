@@ -2,6 +2,7 @@ import {
   Blog,
   ContactUs,
   Faq,
+  Footer,
   Hero,
   Nav,
   Services,
@@ -18,6 +19,7 @@ export default function Home() {
       <Faq />
       <Blog />
       <ContactUs />
+      <Footer />
     </div>
   );
 }
