@@ -68,14 +68,14 @@ const serviceCards = {
 
 export default function Services() {
   return (
-    <section className="col-span-full px-[6.25rem]">
+    <section className="col-span-full max-sm:px-4 px-[6.25rem]">
       <h2 className="text-gray text-xl leading-8 text-center capitalize">
         our services
       </h2>
-      <p className="text-black font-manrope text-5xl text-center leading-[72px] max-w-[842px] mx-auto">
+      <p className="text-black font-manrope max-sm:text-2xl text-5xl text-center leading-[72px] max-w-[842px] mx-auto">
         Handshake infographic mass market crowdfunding iteration.
       </p>
-      <div className="mt-[78px] flex items-center justify-between gap-24 mb-44">
+      <div className=" mt-[78px] flex max-sm:flex-col items-center justify-between gap-24 max-sm:gap-14 mb-44 max-sm:mb-24">
         {serviceCards.triple.map((card, index) => (
           <div key={index} className="flex flex-col w-[300px] gap-3">
             <Image src={card.image} alt="service" width={300} height={354} />
@@ -83,7 +83,7 @@ export default function Services() {
             <p className="text-gray text-xl leading-8">{card.description}</p>
             <Link
               href="#"
-              className="text-dark-blue text-xl leading-9 font-bold flex place-items-center gap-2 border-b border-dark-blue w-[164px]"
+              className="text-dark-blue text-xl leading-9 font-bold flex place-items-center gap-2 border-b border-dark-blue max-sm:w-fit w-[164px]"
             >
               <span>Explore page</span>
               <Image
@@ -100,7 +100,7 @@ export default function Services() {
         {serviceCards.fullSpan.map((card, index) => (
           <div
             key={index}
-            className={`flex items-center gap-[150px] mb-44 relative ${
+            className={`flex max-sm:flex-col items-center gap-[150px] mb-44 max-sm:mb-24 relative ${
               index === 1 && "flex-row-reverse mt-[120px]"
             }`}
           >
@@ -113,13 +113,13 @@ export default function Services() {
                 height={525}
                 className={`${
                   index === 0
-                    ? "absolute -bottom-32 right-10"
-                    : "absolute -bottom-32 left-10"
+                    ? "absolute max-sm:w-[260px] max-sm:right-0 max-sm:top-32 -bottom-32 right-10"
+                    : "absolute max-sm:w-[260px] max-sm:left-0 max-sm:top-52 -bottom-32 left-10"
                 }`}
               />
             </div>
             <div className="max-w-[493px]">
-              <h3 className="text-black text-4xl leading-[56px] font-normal font-manrope mb-10">
+              <h3 className="text-black max-sm:text-3xl text-4xl leading-[56px] font-normal font-manrope mb-10">
                 {card.title}
               </h3>
               <ul className="text-gray text-xl leading-8 list-disc flex flex-col gap-6 mb-14 ">
@@ -144,7 +144,7 @@ export default function Services() {
               {index === 0 && (
                 <Link
                   href="/"
-                  className="bg-dark-blue border-2 border-dark-blue py-4 px-14 rounded-[56px] text-white font-bold text-xl"
+                  className="bg-dark-blue max-sm:w-full border-2 border-dark-blue py-4 px-14 rounded-[56px] text-white font-bold text-xl"
                 >
                   Start now
                 </Link>

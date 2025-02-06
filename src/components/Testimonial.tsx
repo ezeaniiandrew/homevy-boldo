@@ -29,12 +29,12 @@ const testimonials = [
 
 export default function Testimonial() {
   return (
-    <section className="mt-[120px] bg-dark-blue col-span-full px-[6.25rem] pt-24 pb-24">
-      <div className="flex justify-between">
-        <p className="max-w-[716px] font-manrope text-5xl leading-[4.5rem] text-white">
+    <section className="mt-[120px] bg-dark-blue col-span-full max-sm:p-4 max-sm:pb-8 px-[6.25rem] pt-24 pb-24">
+      <div className="flex justify-between max-sm:flex-col max-sm:gap-6">
+        <p className="max-w-[716px] font-manrope max-sm:text-4xl text-5xl leading-[4.5rem] text-white">
           An enterprise template to ramp up your company website
         </p>
-        <div className="flex items-center justify-center gap-6 self-end">
+        <div className="flex items-center justify-center max-sm:justify-between gap-6 self-end max-sm:w-full">
           <button
             type="button"
             title="previous slide"
@@ -51,12 +51,11 @@ export default function Testimonial() {
           </button>
         </div>
       </div>
-      <div className="mt-[72px] flex gap-[22px] ">
+      <div className="mt-[72px] flex gap-[22px] max-sm:flex-col">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="flex h-fit flex-col gap-8 w-[350px] p-10 bg-white rounded-xl shadow-[0px_12px_32px_0px_#0000001F;
-]"
+            className="flex h-fit flex-col gap-8 w-[350px] max-sm:w-auto p-10 max-sm:p-5 bg-white rounded-xl shadow-[0px_12px_32px_0px_#0000001F]"
           >
             <p className="max-w-[716px] font-manrope text-black text-2xl leading-[36px]">
               {`"${testimonial.text}"`}

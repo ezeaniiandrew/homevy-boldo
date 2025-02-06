@@ -11,7 +11,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-12 w-full text-white">
+    <div className="md:grid md:grid-cols-12 w-full text-white">
       <Nav />
       <Hero />
       <Services />

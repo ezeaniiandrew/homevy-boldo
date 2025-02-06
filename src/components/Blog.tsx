@@ -37,17 +37,26 @@ export default function Blog() {
   ];
 
   return (
-    <section className="col-span-full px-[6.25rem] text-center mb-[124px]">
+    <section className="col-span-full max-sm:p-4 px-[6.25rem] text-center mb-[124px] max-sm:mb-[64px]">
       <h2 className="text-gray text-xl leading-[32px] text-center capitalize">
         our blog
       </h2>
-      <p className="text-black text-5xl leading-[72px] font-manrope text-center max-w-[842px] mx-auto">
+      <p className="text-black text-5xl max-sm:text-3xl leading-[72px] font-manrope text-center max-w-[842px] mx-auto">
         Value proposition accelerator product management venture
       </p>
-      <div className="mt-[79px] mb-[84px] grid grid-cols-[repeat(3,_300px)] gap-[50px] justify-around text-left">
+      <div className="mt-[79px] mb-[84px] grid grid-cols-[repeat(3,_300px)] max-sm:flex max-sm:flex-col gap-[50px] justify-around text-left">
         {blogPosts.map((post) => (
-          <div key={post.title} className="w-[300px] grid grid-cols-subgrid">
-            <Image src={post.image} height={209} width={300} alt="" />
+          <div
+            key={post.title}
+            className="w-[300px] max-sm:w-full grid grid-cols-subgrid"
+          >
+            <Image
+              src={post.image}
+              height={209}
+              width={300}
+              alt=""
+              className="max-sm:w-full"
+            />
             <div className="flex gap-3 mt-6 mb-3">
               <p className="text-dark-blue font-bold leading-[28px]">
                 {post.tag}
